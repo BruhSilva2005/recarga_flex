@@ -1,12 +1,12 @@
 <?php
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecario.php";
-require_once $_SERVER["DOCUMENT_ROOT"] ."/controllers/motoristaController.php";
-require_once $_SERVER["'DOCUMENT_ROOT"] ."/models/motorista.php";
+require_once $_SERVER["DOCUMENT_ROOT"] ."/controllers/MotoristaController.php";
+require_once $_SERVER["DOCUMENT_ROOT"] ."/models/motorista.php";
 
 if(isset($_GET["del"])&& !empty($_get['id_motorista'])){
 
-    $MotoristaController = new motoristaController();
+    $motoristaController = new motoristaController();
     $MotoristaController->excluirmotorista();
 } 
 ?>
@@ -28,21 +28,21 @@ if(isset($_GET["del"])&& !empty($_get['id_motorista'])){
 
                     $motoristaController = new MotoristaController();
 
-                    $motorista = $motoristaController->listarMotoristas();
+                    $motorista = $motoristaController->listarMotorista();
 
-                    //var_dump($motoristas);
+                   // var_dump($motoristas);
 
-                    foreach($motorista as $motoristas):
+                    foreach($motorista as $moto):
                 ?>
 
                 <tr>
 
-                <td><?=$motorista->id_motorista?></td>
-                <td><?=$motorista->CNH?></td>
-                <td><?=$motorista->Codigodosindicato?></td>
+                <td><?=$moto->id_motorista?></td>
+                <td><?=$moto->CNH?></td>
+                <td><?=$moto->Codigodosindicato?></td>
                 <td>
-                    <a href="editar.php?id_motorista=<?=$motorista->id_motorista?>" class="btn btn-primary">Editar</A>
-                    <a href = "index.php?id_motorista=<?=$motorista->id_motorista?>" class="btn btn-primary">Excluir</a>
+                    <a href="editar.php?id_motorista=<?=$moto->id_motorista?>" class="btn btn-primary">Editar</A>
+                    <a href = "index.php?id_motorista=<?=$moto->id_motorista?>" class="btn btn-primary">Excluir</a>
                 </td>       
             </tr>
             <?php

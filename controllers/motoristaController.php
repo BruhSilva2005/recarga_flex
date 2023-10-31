@@ -2,17 +2,18 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'] . "/models/motorista.php";
 
-class motoristaController{
+
+class MotoristaController{
 
     private $motoristaModel;
 
     public function __construct()
     {
-        $this->motoristaModel= new motoristaController();
+        $this->motoristaModel= new Motorista();
     }
 
-    public function listarmotorista(){
-        return $this->motoristaModel->listarMotoristas();
+    public function listarMotorista(){
+        return $this->motoristaModel->listarMotorista();
     }
     public function cadastrarmotorista(){
             if($_SERVER['REQUEST_METHOD'] ==='POST'){
@@ -31,30 +32,26 @@ class motoristaController{
             }
     }
 
-    public function EditarAluno(){{
-        $id_aluno = $_GET['id_aluno'];
+    public function EditarMotorista(){{
+        $id_motorista = $_GET['id_motorista'];
         if($_SERVER['REQUEST_METHOD'] ==='POST'){
 
             $dados =[
-                'nome'=>$_POST['nome'],
-                'cpf'=>$_POST['cpf'],
-                'email'=>($_POST['email']),
-                'telefone'=>$_POST['telefone'],
-                'celular'=>$_POST['celular'],
-                'data_nascimento'=>$_POST['data_nascimento']
+                'cnh'=>$_POST['cnh'],
+                'cnpj'=>$_POST['cnpj'],
                ];
 
-           $this->alunoModel->editar($id_aluno,$dados);
+           $this->motoristaModel->EditarMotorista($id_motorista,$dados);
 
           header('Location: index.php');   
            exit;
         }
-        return $this->alunoModel->buscar($id_aluno);
+        return $this->motoristaModel->buscarMotorista($id_motorista);
     }
     }
-    public function excluirAluno(){
+    public function excluirmotorista(){
 
-        $this->alunoModel->excluir($_GET['id_aluno']);
+        $this->motoristaModel->excluirmotorista($_GET['id_motorista']);
 
         header('location: index.php');
         exit;

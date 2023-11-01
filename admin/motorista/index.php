@@ -34,7 +34,6 @@ if(isset($_GET["del"])&& !empty($_get['id_motorista'])){
 
                     foreach($motorista as $moto):
                 ?>
-
                 <tr>
 
                 <td><?=$moto->id_motorista?></td>

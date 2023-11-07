@@ -10,6 +10,7 @@
     margin:0;
     padding: 0 ;
     box-sizing: border-box;
+    background-color: #f58634;
 
 }
 body{
@@ -29,6 +30,7 @@ body{
 #menu ul{
     display: flex;
     list-style: none;
+    background-color: #f58634;
 }
 #menu ul li {
     margin-left: 20px;
@@ -48,3 +50,4 @@ body{
     text-transform: uppercase;
     font-size: .8rem;
 }
+

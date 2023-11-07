@@ -25,7 +25,11 @@
                 <tr>
                     <th>#</th>
                     <th>Nome</th>
+                    <th>sobrenome</th>
                     <th>E-mail</th>
+                    <th>cpf</th>
+                    <th>telefone</th>
+                    <th>senha</th>
                     <th>Perfil</th>
                     <th style="width: 200px;">Ação</th>
                 </tr>
@@ -36,16 +40,20 @@
 
                 $usuarioController = new UsuarioController();
 
-                $usuarios = $usuarioController->listarUsuarios();   
+                $usuario = $usuarioController->listarUsuarios();   
 
-                //var_dump($usuarios);
+                //var_dump($usuario);
 
-                foreach($usuarios as $user):
+                foreach($usuario as $user):
             ?>
             <tr>
                     <td><?=$user->id_usuario?></td>
                     <td><?=$user->nome?></td>
+                    <td><?=$user->sobrenome?></td>
                     <td><?=$user->email?></td>
+                    <td><?=$user->cpf?></td>
+                    <td><?=$user->telefone?></td>
+                    <td><?=$user->senha?></td>
                     <td><?=$user->perfil?></td>
                     <td>
 

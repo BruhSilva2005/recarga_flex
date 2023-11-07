@@ -13,8 +13,8 @@
 </head>
 <body>
 <header id="cabecalho" class="container">
-    <div id="futura logotipo">
-        <h1><img src="assets/img/logotipo.png" alt="Futura logotipo" height="30"></h1>
+    <div id="logotipo">
+        <h1><img src="assets/img/logomarca.png" alt="recarga flex" height="70"></h1>
     </div>
     <nav id="menu">
         <ul>
@@ -56,15 +56,66 @@
             font: bold 2rem sans-serif;
             color: white;
         }
+        #cabecalho {
+    background-color: #f58634;
+}
+.carousel-container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .carousel-prev,
+        .carousel-next {
+            cursor: pointer;
+            padding: 10px;
+            background-color: #0074D9; /* Cor de fundo azul */
+            color: #FFF; /* Cor do texto branco */
+        }
+
+        .carousel-prev {
+            left: 0;
+        }
+
+        .carousel-next {
+            right: 0;
+        }
     </style>
 </head>
 <body>
-    <div id="caixa">
-        <div><p>1</p></div>
-        <div><p>2</p></div>
-        <div><p>3</p></div>
-        <div><p>4</p></div>
-        <div><p>5</p></div>
+<div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-item">
+                <img src="https://img.freepik.com/fotos-gratis/um-design-colorido-com-um-design-em-espiral_188544-9588.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699228800&semt=sph" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMNHN0BSGrUzSkczPfcdYK7kDG0Lp-tnybdo7fwMGsXKJvqGUGJqYaCGOSdhamEFCqQ4&usqp=CAU" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+                <img src="URL_DA_IMAGEM_3" alt="Imagem 3">
+            </div>
+        </div>
     </div>
 </body>
 </html>

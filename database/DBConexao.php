@@ -3,7 +3,7 @@
 class DBConexao{
     //configuraçao do banco de Dados 
     private $host = "localhost";
-    private $dbname = "biblioteca";
+    private $dbname = "recarga_flex";
     private $username = "root";
     private $password = "senac2023";
 

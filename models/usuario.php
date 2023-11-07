@@ -3,7 +3,7 @@
 
 class usuario{
     protected $db;
-    protected $table = "usuarios";
+    protected $table = "usuario";
 
     public function __construct()
     {
@@ -37,20 +37,25 @@ public function listarUsuario(){
 }       
         public function cadastrar($dados){
             try{
-                $query= "INSERT INTO {$this->table} (nome,cpf, email, telefone,celular,data_nascimento)
-                VALUES(:nome,:sobenome,:email,:cpf,:telefone,:celular,:data_nascimento)";
+                $query= "INSERT INTO {$this->table} (nome,sobrenome,email, cpf, telefone,senha,perfil) VALUES(:nome,:sobenome,:email,:cpf,:telefone,:senha,:perfil)";
                 $stmt = $this->db-> prepare($query);
                  $stmt->bindParam(':nome',$dados['nome']);
                  $stmt->bindParam(':sobrenome',$dados['sobrenome']);
                  $stmt->bindParam(':email',$dados['email']);
                  $stmt->bindParam(':cpf',$dados['cpf']);
-                ;
                  $stmt->bindParam(':telefone',$dados
                  ['telefone']);
+                 $stmt->bindParam(':senha',$dados
+                 ['senha']);
+                 $stmt->bindParam(':perfil',$dados
+                 ['perfil']);
                  $stmt->execute();
                  return true;
             }catch(PDOException $e){
-                 echo "erro na preparação da consulta:" .$e -> getMessage();
+                 echo "Erro ap Cadastrar" .$e -> getMessage();
+
+                 $_SESSION['erro'] = "Erro ao cadastrar usuario";
+
                  return false;   
             }
 }

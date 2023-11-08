@@ -2,7 +2,7 @@
 
     require_once $_SERVER['DOCUMENT_ROOT'] . "/includes/cabecario.php";
     require_once $_SERVER['DOCUMENT_ROOT'] . "/controllers/UsuarioController.php";
-    require_once $_SERVER['DOCUMENT_ROOT'] . "/models/Usuario.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/models/usuario.php";
 
 
     $UsuarioController = new UsuarioController();
@@ -21,8 +21,8 @@
             <input type="text" name="nome" id="nome" class="form-control" required>
         </div>
         <div class="col-md-12">
-            <label for="nome" class="form-label">sobrenome</label>
-            <input type="text" name="nome" id="nome" class="form-control" required>
+            <label for="sobrenome" class="form-label">sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome" class="form-control" required>
         </div>
         <div class="col-md-6">
             <label for="email" class="form=label">E-mail</label>

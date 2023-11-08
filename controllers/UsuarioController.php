@@ -10,12 +10,12 @@ class UsuarioController
 
     public function __construct()
     {
-        $this->usuarioModel = new Usuario();
+        $this->usuarioModel = new usuario();
     }
 
     public function listarUsuarios()
     {
-        return $this->usuarioModel->listarUsuario();
+        return $this->usuarioModel->listar();
     }
     public function cadastrarUsuarios()
     {
@@ -24,15 +24,15 @@ class UsuarioController
 
            
             $dados = [
-                'nome' => $_POST['nome'],
-                'sobrenome' => $_POST['sobrenome'],
-                'email' => $_POST['email'],
-                'cpf' => $_POST['cpf'],
-                'telefone' => $_POST['telefone'],
-                'senha' => password_hash($_POST['senha'], PASSWORD_DEFAULT),
-                'perfil' => $_POST['perfil'],
+                'nome'=>$_POST['nome'],
+                'sobrenome'=>$_POST['sobrenome'],
+                'email'=>$_POST['email'],
+                'cpf'=>$_POST['cpf'],
+                'telefone'=>$_POST['telefone'],
+                'senha'=>password_hash($_POST['senha'], PASSWORD_DEFAULT),
+                'perfil'=>$_POST['perfil'],
             ];
-
+            
             $this->usuarioModel->cadastrar($dados);
 
             header('Location: index.php');

@@ -14,7 +14,7 @@
 <body>
 <header id="cabecalho" class="container">
     <div id="logotipo">
-        <h1><img src="assets/img/logomarca.png" alt="recarga flex" height="70"></h1>
+        <h1><img src="assets/img/logomarca.png" alt="recarga flex" height="80"></h1>
     </div>
     <nav id="menu">
         <ul>
@@ -32,76 +32,6 @@
 <html >
 <head>
     <meta charset="UTF-8">
-    <style>
-        #caixa{
-            width: 60vw;
-            height:12rem ;
-            background: grey;
-            margin: 4rem auto 0 auto;
-            border:solid 4px;
-            display: flex;
-            padding: 1rem;  
-            overflow-x:auto ;            
-        }
-        #caixa div{
-            min-width: 12rem;
-            max-height: 12rem;
-            background: red;
-            border: solid 2px;
-            margin-left: 2rem;
-        }
-        #caixa div p{
-            margin-top: 40%;
-            margin-left: 40%;
-            font: bold 2rem sans-serif;
-            color: white;
-        }
-        #cabecalho {
-    background-color: #f58634;
-}
-.carousel-container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .carousel-wrapper {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-
-        .carousel-item {
-            flex: 0 0 100%;
-        }
-
-        .carousel-item img {
-            width: 100%;
-            height: auto;
-        }
-
-        .carousel-controls {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-
-        .carousel-prev,
-        .carousel-next {
-            cursor: pointer;
-            padding: 10px;
-            background-color: #0074D9; /* Cor de fundo azul */
-            color: #FFF; /* Cor do texto branco */
-        }
-
-        .carousel-prev {
-            left: 0;
-        }
-
-        .carousel-next {
-            right: 0;
-        }
-    </style>
 </head>
 <body>
 <div class="carousel-container">
@@ -125,7 +55,19 @@
     </div>
 </div>
     <main class="container">
+        <section id="servicos-usados">
+            <div class="bloco-centro">
+                <div class="centro">
         <h2>Serviços</h2>
+</section>
+</div>
+</div>
+        <div class="imagens">
+        <img src="assets/img/recarga-de-credito.jpg" alt="recarga flex" height="100"></h1>
+        <p> Recarga do Cartão <p>
+            <button>$</button>
+        </div>
+        
     </main>
 
 

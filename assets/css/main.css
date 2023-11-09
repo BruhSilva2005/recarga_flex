@@ -10,7 +10,7 @@
     margin:0;
     padding: 0 ;
     box-sizing: border-box;
-    background-color: #f58634;
+   
 
 }
 body{
@@ -26,6 +26,8 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f58634;
+    
 }
 #menu ul{
     display: flex;
@@ -50,4 +52,126 @@ body{
     text-transform: uppercase;
     font-size: .8rem;
 }
+#caixa{
+    width: 60vw;
+    height:12rem ;
+    background: grey;
+    margin: 4rem auto 0 auto;
+    border:solid 4px;
+    display: flex;
+    padding: 1rem;  
+    overflow-x:auto ;            
+}
+#caixa div{
+    min-width: 12rem;
+    max-height: 12rem;
+    background: red;
+    border: solid 2px;
+    margin-left: 2rem;
+}
+#caixa div p{
+    margin-top: 40%;
+    margin-left: 40%;
+    font: bold 2rem sans-serif;
+    color: white;
+}
+#cabecario inicio {
+background-color: #f58634; ;
+}
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+}
+
+.carousel-item img {
+    width: 70%;
+    height: auto;
+    
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-prev,
+.carousel-next {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #0074D9; /* Cor de fundo azul */
+    color: #FFF; /* Cor do texto branco */
+}
+
+.carousel-prev {
+    left: 0;
+}
+
+.carousel-next {
+    right: 0;
+}
+.bloco-centro{
+    border-right: 4px solid var(--primary);
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bloco-centro .centro{
+    text-align: center;
+}
+.imagens .span{
+    width: 400px;
+    height: 350px;
+}
+./* Button */
+
+position: absolute;
+width: 181px;
+height: 68px;
+left: 274px;
+top: 1256px;
+
+
+
+/* Rectangle 1 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: #000000;
+border-radius: 10px;
+
+
+/* Button */
+
+position: absolute;
+left: 28.73%;
+right: 47.51%;
+top: 27.94%;
+bottom: 29.41%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+
 

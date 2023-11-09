@@ -16,6 +16,7 @@
     </style>
 <body class="d-flex flex-column min-vh-100">
     <header>
+        <div class= "inicio">
         <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme = "dark">
             <div class="container">
                 <a class="navbar-brand" href="#">Recarga Flex</a>
@@ -32,6 +33,7 @@
                     </div>
                 </div>
             </div>
+</div>
         </nav>
     </header>
 

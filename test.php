@@ -34,19 +34,6 @@
     <meta charset="UTF-8">
 </head>
 <body>
-<div class="carousel-container">
-        <div class="carousel-wrapper">
-            <div class="carousel-item">
-                <img src="https://img.freepik.com/fotos-gratis/um-design-colorido-com-um-design-em-espiral_188544-9588.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699228800&semt=sph" alt="Imagem 1">
-            </div>
-            <div class="carousel-item">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkMNHN0BSGrUzSkczPfcdYK7kDG0Lp-tnybdo7fwMGsXKJvqGUGJqYaCGOSdhamEFCqQ4&usqp=CAU" alt="Imagem 2">
-            </div>
-            <div class="carousel-item">
-                <img src="URL_DA_IMAGEM_3" alt="Imagem 3">
-            </div>
-        </div>
-    </div>
 </body>
 </html>
 <div id="banner">
@@ -62,12 +49,22 @@
 </section>
 </div>
 </div>
-        <div class="imagens">
-        <img src="assets/img/recarga-de-credito.jpg" alt="recarga flex" height="100"></h1>
-        <p> Recarga do Cartão <p>
-            <button>$</button>
+        <div class="imagens1">
+        <img src="" alt="recarga flex" height="100">
+        <p> Recarga do Cartão </p>
+        <a href="#" class="btn-secundario">   $   </a>
         </div>
-        
+        <div class="imagens2">
+        <img scr = "" alt = "imagem do saldo"height="100">
+        <p> Consulta do Saldo</p>
+        <a href="#" class="btn-secundario">Saldo</a>
+        </div>
+        <div class="imagens3">
+        <img scr = "" alt = "disque denuncia"height="100">
+        <p> Disque Denuncia</p>
+        <a href="#" class="btn-secundario">Saldo</a>
+        </div>
+
     </main>
 
 

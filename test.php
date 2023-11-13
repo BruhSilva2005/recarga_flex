@@ -49,24 +49,20 @@
 </section>
 </div>
 </div>
-        <div class="imagens1">
-        <img src="" alt="recarga flex" height="100">
-        <p> Recarga do Cartão </p>
-        <a href="#" class="btn-secundario">   $   </a>
-        </div>
-        <div class="imagens2">
-        <img scr = "" alt = "imagem do saldo"height="100">
-        <p> Consulta do Saldo</p>
-        <a href="#" class="btn-secundario">Saldo</a>
-        </div>
-        <div class="imagens3">
-        <img scr = "" alt = "disque denuncia"height="100">
-        <p> Disque Denuncia</p>
-        <a href="#" class="btn-secundario">Saldo</a>
-        </div>
 
     </main>
-
-
+    <link rel="stylesheet" href="/assets/css/rodape.css">
+<footer class="rodape">
+        <ul>
+        <li>
+            <img src="/assets/img/logomarca.png" alt="Logo Recarga Flex" width="60" height="70">
+            &copy; 2023 Recarga Flex. Todos os direitos reservados.
+        </li>
+            <li><a href="/admin/redirecionamentos/politicadpriv.php">Política de Privacidade</a></li>
+            <li><a href="/admin/redirecionamentos/guia_usuario.php">Guia de Usuario</a></li>
+            <li><a href="/admin/redirecionamentos/termos de uso.php">Termos de Uso</a></li>
+            <li><a href="/admin/redirecionamentos/contato.php">Contato</a></li>
+            
+        </ul>
 </body>
 </html>
